@@ -1,0 +1,60 @@
+{
+	"architecture": {
+		"32bit": {
+			"hash": "5119abbfcd44d23bb6c9032241559e3e57d83b27c495c7f34dd5fe99ed300171",
+			"url": "http://127.0.0.1:8123/ipfs/QmdxEmRaTTY1yFFDwAjo7durdSKpkupHmm4Wy8jejbweZY#/dl.zip"
+		},
+		"64bit": {
+			"hash": "a31db57d9a3d466056d928f5c36fb64f3d04f0071357c2cebeac842a5ef73c1a",
+			"url": "http://127.0.0.1:8123/ipfs/Qmar1HCbjDVD9i1LHCj1rH4XzRcPzRC71wVRGoxHb8Jtky#/dl.zip"
+		},
+		"arm64": {
+			"hash": "509733cb08dcac0e5a106cfe936b116d42834ce77dc0aecddf4524e0ba2c9b47",
+			"url": "http://127.0.0.1:8123/ipfs/QmNdzuoEJNtA339YjSqvNGB2Sqayn2wFvfPcrdzPW1uFmv#/dl.zip"
+		}
+	},
+	"autoupdate": {
+		"architecture": {
+			"32bit": {
+				"hash": {
+					"jp": "$.[0].x86.hash",
+					"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Versions/MQTTX"
+				},
+				"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Software/MQTTX/MQTTX_$version_x86.exe#/dl.zip"
+			},
+			"64bit": {
+				"hash": {
+					"jp": "$.[0].x64.hash",
+					"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Versions/MQTTX"
+				},
+				"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Software/MQTTX/MQTTX_$version_x64.exe#/dl.zip"
+			},
+			"arm64": {
+				"hash": {
+					"jp": "$.[0].arm64.hash",
+					"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Versions/MQTTX"
+				},
+				"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Software/MQTTX/MQTTX_$version_arm64.exe#/dl.zip"
+			}
+		}
+	},
+	"checkver": {
+		"jp": "$.[0].version",
+		"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Versions/MQTTX"
+	},
+	"description": "MQTT 桌面客户端",
+	"homepage": "https://qttx.app",
+	"license": "Apache-2.0",
+	"pre_install": [
+		"Get-ChildItem \"$dir\\`$PLUGINSDIR\\app*.7z\" | Rename-Item -NewName 'app.7z'",
+		"Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app.7z\" \"$dir\"",
+		"Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
+	],
+	"shortcuts": [
+		[
+			"MQTTX.exe",
+			"MQTT X"
+		]
+	],
+	"version": "1.9.3"
+}

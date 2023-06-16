@@ -1,0 +1,36 @@
+{
+	"autoupdate": {
+		"hash": {
+			"jp": "$.[0].all.hash",
+			"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Versions/HMCL"
+		},
+		"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Software/HMCL/HMCL_$version_all.exe#/HMCL.exe"
+	},
+	"bin": [
+		"HMCL.exe"
+	],
+	"checkver": {
+		"jp": "$.[0].version",
+		"url": "http://127.0.0.1:8123/ipns/k51qzi5uqu5dim6iey988wcz8xl5mlvgoigd0hk7w875zomh3f0knmyf2gfpma/Versions/HMCL"
+	},
+	"description": "HMCL 是一个免费、开源的 Minecraft 启动器，允许玩家方便快捷地安装、管理、运行游戏。",
+	"hash": "dd4c8e9db18af01a715eea6a661a94e185dc4981eb7a1eee0541bb0c1a43bd9c",
+	"homepage": "https://github.com/huanghongxun/HMCL",
+	"license": "GPL-3.0",
+	"persist": [
+		".minecraft"
+	],
+	"shortcuts": [
+		[
+			"HMCL.exe",
+			"HMCL"
+		]
+	],
+	"suggest": {
+		"JDK": [
+			"java/openjdk"
+		]
+	},
+	"url": "http://127.0.0.1:8123/ipfs/QmZgma3hqqEpNkWB2yTnsgbrftg9QL243RRXpfAtPQ13vG#/HMCL.exe",
+	"version": "3.5.4.234"
+}
